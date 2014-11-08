@@ -1,0 +1,17 @@
+<div class="top-part bgs">
+	<div class="main-bar rtl">
+		<ul class="bar-list font-whover">
+			<li><a id="logo" href="#{{pages[1]}}">אתי אלבוים</a></li>
+			<!--ADD "show-ignored-bar" class here to open bar on "small"-->
+			<span class="ignore-small" ng-class="{'show-ignored-bar':getBarClass()}">
+				<li><a ng-class="{'bar-pressed':isSelected(1)}" href="#{{pages[1]}}">תעתועים</a></li>
+				<li><a ng-class="{'bar-pressed':isSelected(2)}" href="#{{pages[2]}}">אמא קסומה</a></li>
+				<li><a ng-class="{'bar-pressed':isSelected(3)}" href="#{{pages[3]}}">התרנגול שהתבלבל</a></li>
+				<li><a ng-class="{'bar-pressed':isSelected(4)}" href="#{{pages[4]}}">עוד</a></li>
+				<li><a ng-class="{'bar-pressed':isSelected(5)}" href="#{{pages[5]}}">אודות</a></li>
+			</span>
+			<!--ADD "bar-opened-btn" class here change button color to show it's opened-->
+			<li><a ng-click="toggleBar()" class="bar-btn" ng-class="{'bar-opened-btn':getBarClass()}"  href="">&#9776</a></li>
+		</ul>
+	</div>
+</div>
