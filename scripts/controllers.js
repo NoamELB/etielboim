@@ -169,7 +169,8 @@ siteControllers.controller('WidthController', ['$scope', '$window', '$timeout', 
 
  	// redirect the web to page 1 after x seconds
 	$timeout(function() {
-		$location.path($scope.pages[1]);
+		if ($scope.tab === 0)
+			$location.path($scope.pages[1]);
 	}, 5000);
 
 /* ==========================================================================
