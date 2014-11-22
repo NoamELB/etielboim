@@ -29,5 +29,5 @@ var myApp = angular.module('myApp', [
 		redirectTo: '/book1' // default page - newest book
 	});
 }]);
-})(angular)
+})(angular);
 
