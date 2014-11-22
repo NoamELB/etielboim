@@ -1,3 +1,4 @@
+(funciton(angular){
 'use strict';
 var myApp = angular.module('myApp', [
 	'ngRoute',
@@ -28,4 +29,5 @@ var myApp = angular.module('myApp', [
 		redirectTo: '/book1' // default page - newest book
 	});
 }]);
+})(angular)
 
