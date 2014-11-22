@@ -1,3 +1,4 @@
+(function(angular){
 'use strict';
 var siteControllers = angular.module('siteControllers', ['ngAnimate', 'ui.bootstrap', 'monospaced.mousewheel']);
 
@@ -224,3 +225,4 @@ siteControllers.controller('WidthController', ['$scope', '$window', '$timeout', 
 		+'<a target="_blank" href="">לקבצי מקור</a></p>';
 	};
 }]);
+})(angular);
