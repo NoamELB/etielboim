@@ -10,7 +10,7 @@
 	angular.module('book2Controller', [])
 	.controller('Book2Controller', ['$scope', '$interval', '$timeout', function($scope, $interval, $timeout) {
 		$scope.showAnimate = false;
-		$scope.image = 3; // first image to show
+		$scope.image = 4; // first image to show
 
 		// decide which image to show
 		$scope.showImage = function(img) { 
@@ -22,7 +22,7 @@
 		}, 1);
 		// switch the pictures every x seconds
 		$interval(function() { 
-			if (++$scope.image > 3) // increase image, then check if it is 4. if it is, make it 1
+			if (++$scope.image > 4) // increase image, then check if it is 5. if it is, make it 1
 				$scope.image = 1;
 		}, 3500);
 
